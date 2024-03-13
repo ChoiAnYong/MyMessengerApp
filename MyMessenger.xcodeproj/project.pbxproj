@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1F9DCD2BA18C94005DD9D6 /* MainTabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DCC2BA18C94005DD9D6 /* MainTabType.swift */; };
+		AD1F9DD12BA18EBE005DD9D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DD02BA18EBE005DD9D6 /* HomeView.swift */; };
+		AD1F9DD32BA18ECB005DD9D6 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DD22BA18ECB005DD9D6 /* ChatListView.swift */; };
+		AD1F9DD52BA193AE005DD9D6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DD42BA193AE005DD9D6 /* HomeViewModel.swift */; };
 		AD742B9C2B9ED5A400436CCE /* MyMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD742B9B2B9ED5A400436CCE /* MyMessengerApp.swift */; };
 		AD742B9E2B9ED5A400436CCE /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD742B9D2B9ED5A400436CCE /* AuthenticatedView.swift */; };
 		AD742BA02B9ED5A500436CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD742B9F2B9ED5A500436CCE /* Assets.xcassets */; };
@@ -50,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD1F9DCC2BA18C94005DD9D6 /* MainTabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabType.swift; sourceTree = "<group>"; };
+		AD1F9DD02BA18EBE005DD9D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AD1F9DD22BA18ECB005DD9D6 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		AD1F9DD42BA193AE005DD9D6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		AD742B982B9ED5A400436CCE /* MyMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD742B9B2B9ED5A400436CCE /* MyMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessengerApp.swift; sourceTree = "<group>"; };
 		AD742B9D2B9ED5A400436CCE /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
@@ -104,6 +112,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD1F9DCE2BA18E91005DD9D6 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				AD1F9DD22BA18ECB005DD9D6 /* ChatListView.swift */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		AD1F9DCF2BA18E9C005DD9D6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD1F9DD02BA18EBE005DD9D6 /* HomeView.swift */,
+				AD1F9DD42BA193AE005DD9D6 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		AD742B8F2B9ED5A400436CCE = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +222,8 @@
 		AD742BDE2B9EEDA300436CCE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD1F9DCF2BA18E9C005DD9D6 /* Home */,
+				AD1F9DCE2BA18E91005DD9D6 /* ChatList */,
 				AD742BE12B9EEDCD00436CCE /* MainTab */,
 				AD742BE02B9EEDC600436CCE /* Login */,
 				AD742BDF2B9EEDAC00436CCE /* Authentication */,
@@ -227,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				AD742BE22B9EEE1A00436CCE /* MainTabView.swift */,
+				AD1F9DCC2BA18C94005DD9D6 /* MainTabType.swift */,
 			);
 			path = MainTab;
 			sourceTree = "<group>";
@@ -380,12 +408,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1F9DD52BA193AE005DD9D6 /* HomeViewModel.swift in Sources */,
 				AD742BE52B9EEE2700436CCE /* LoginIntroView.swift in Sources */,
 				AD742BD92B9EE47000436CCE /* Services.swift in Sources */,
 				AD742BD42B9EDE8B00436CCE /* AppDelegate.swift in Sources */,
+				AD1F9DD12BA18EBE005DD9D6 /* HomeView.swift in Sources */,
+				AD1F9DD32BA18ECB005DD9D6 /* ChatListView.swift in Sources */,
 				AD742BDD2B9EECB000436CCE /* AuthenticationViewModel.swift in Sources */,
 				AD742BE32B9EEE1A00436CCE /* MainTabView.swift in Sources */,
 				AD742B9E2B9ED5A400436CCE /* AuthenticatedView.swift in Sources */,
+				AD1F9DCD2BA18C94005DD9D6 /* MainTabType.swift in Sources */,
 				AD742BDB2B9EE4DF00436CCE /* AuthenticationService.swift in Sources */,
 				AD742BCD2B9ED9B800436CCE /* DIContainer.swift in Sources */,
 				AD94690B2BA0706400E5BF5A /* ServiceError.swift in Sources */,
