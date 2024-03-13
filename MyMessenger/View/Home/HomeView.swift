@@ -60,6 +60,9 @@ struct HomeView: View {
                 })
             }
         }
+        .onAppear {
+            viewModel.send(action: .getUser)
+        }
     }
 }
 
@@ -145,5 +148,5 @@ fileprivate struct BeginningView: View {
 }
 
 #Preview {
-    HomeView(viewModel: .init())
+    HomeView(viewModel: .init(container: .init(services: StubService()), userId: "user1_id"))
 }
