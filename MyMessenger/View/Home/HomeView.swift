@@ -71,7 +71,7 @@ struct HomeView: View {
             
             if viewModel.users.isEmpty {
                 Spacer(minLength: 89)
-                BeginningView()
+                BeginningView(viewModel: viewModel)
             } else {
                 LazyVStack {
                     ForEach(viewModel.users, id: \.id) { user in
@@ -153,6 +153,12 @@ fileprivate struct SearBtnView: View {
 }
 
 fileprivate struct BeginningView: View {
+    @ObservedObject private var viewModel: HomeViewModel
+    
+    fileprivate init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         VStack {
             VStack(spacing: 3) {
@@ -166,7 +172,7 @@ fileprivate struct BeginningView: View {
             .padding(.bottom, 30)
             
             Button(action: {
-                
+                viewModel.send(action: .requestContacts)
             }, label: {
                 Text("친구추가")
                     .font(.system(size: 14, weight: .bold))

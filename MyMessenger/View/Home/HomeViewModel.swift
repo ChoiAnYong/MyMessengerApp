@@ -12,6 +12,7 @@ final class HomeViewModel: ObservableObject {
     
     enum Action {
         case load
+        case requestContacts
         case presentMyProfileView
         case presentOtherProfileView(String)
     }
@@ -51,6 +52,23 @@ final class HomeViewModel: ObservableObject {
                     self?.users = users
                 }.store(in: &subscription)
             
+        case .requestContacts:
+            container.services.contactService.fetchContacts()
+                .flatMap { users in
+                    self.container.services.userService.addUserAfterContact(users: users)
+                }
+                .flatMap { _ in
+                    self.container.services.userService.loadUsers(id: self.userId)
+                }
+                .sink { [weak self] completion in
+                    if case .failure = completion {
+                        self?.phase = .fail
+                    }
+                } receiveValue: { [weak self] users in
+                    self?.phase = .success
+                    self?.users = users
+                }.store(in: &subscription)
+
         case .presentMyProfileView:
             modalDestination = .myProfile
             
