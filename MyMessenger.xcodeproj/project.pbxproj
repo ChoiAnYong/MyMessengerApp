@@ -40,6 +40,8 @@
 		ADBDF0582BA1C0610008A6F6 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDF0572BA1C0610008A6F6 /* UserObject.swift */; };
 		ADBDF05A2BA1C09C0008A6F6 /* DBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDF0592BA1C09C0008A6F6 /* DBError.swift */; };
 		ADBDF05C2BA1C40E0008A6F6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDF05B2BA1C40E0008A6F6 /* Constant.swift */; };
+		ADDCCFF32BA27D2600C96508 /* RandomNonceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCCFF12BA27D2600C96508 /* RandomNonceString.swift */; };
+		ADDCCFF42BA27D2600C96508 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCCFF22BA27D2600C96508 /* SHA256.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,9 @@
 		ADBDF0572BA1C0610008A6F6 /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		ADBDF0592BA1C09C0008A6F6 /* DBError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBError.swift; sourceTree = "<group>"; };
 		ADBDF05B2BA1C40E0008A6F6 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		ADDCCFEF2BA2793800C96508 /* MyMessenger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyMessenger.entitlements; sourceTree = "<group>"; };
+		ADDCCFF12BA27D2600C96508 /* RandomNonceString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNonceString.swift; sourceTree = "<group>"; };
+		ADDCCFF22BA27D2600C96508 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +170,7 @@
 		AD742B9A2B9ED5A400436CCE /* MyMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				ADDCCFEF2BA2793800C96508 /* MyMessenger.entitlements */,
 				AD742BD52B9EE09700436CCE /* GoogleService-Info.plist */,
 				AD742B9B2B9ED5A400436CCE /* MyMessengerApp.swift */,
 				AD742BD32B9EDE8B00436CCE /* AppDelegate.swift */,
@@ -173,6 +179,7 @@
 				AD9469072BA06EBF00E5BF5A /* Model */,
 				AD742BD72B9EE45300436CCE /* Service */,
 				ADBDF0512BA1BB090008A6F6 /* Repository */,
+				ADDCCFF02BA27C0900C96508 /* Util */,
 				AD742BCA2B9ED97800436CCE /* Resource */,
 				AD742BC92B9ED6C400436CCE /* Info.plist */,
 				AD742BA12B9ED5A500436CCE /* Preview Content */,
@@ -306,6 +313,15 @@
 				ADBDF0572BA1C0610008A6F6 /* UserObject.swift */,
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		ADDCCFF02BA27C0900C96508 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				ADDCCFF12BA27D2600C96508 /* RandomNonceString.swift */,
+				ADDCCFF22BA27D2600C96508 /* SHA256.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADDCCFF32BA27D2600C96508 /* RandomNonceString.swift in Sources */,
 				ADBDF0532BA1BB270008A6F6 /* UserDBRepository.swift in Sources */,
 				AD1F9DD52BA193AE005DD9D6 /* HomeViewModel.swift in Sources */,
 				AD742BE52B9EEE2700436CCE /* LoginIntroView.swift in Sources */,
@@ -457,6 +474,7 @@
 				AD742BD42B9EDE8B00436CCE /* AppDelegate.swift in Sources */,
 				AD1F9DD12BA18EBE005DD9D6 /* HomeView.swift in Sources */,
 				ADBDF05A2BA1C09C0008A6F6 /* DBError.swift in Sources */,
+				ADDCCFF42BA27D2600C96508 /* SHA256.swift in Sources */,
 				AD1F9DD32BA18ECB005DD9D6 /* ChatListView.swift in Sources */,
 				AD742BDD2B9EECB000436CCE /* AuthenticationViewModel.swift in Sources */,
 				AD742BE32B9EEE1A00436CCE /* MainTabView.swift in Sources */,
@@ -632,6 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyMessenger/MyMessenger.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMessenger/Preview Content\"";
@@ -649,7 +668,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = anyong.MyMessenger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anyong.MyMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -662,6 +681,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyMessenger/MyMessenger.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMessenger/Preview Content\"";
@@ -679,7 +699,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = anyong.MyMessenger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anyong.MyMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
