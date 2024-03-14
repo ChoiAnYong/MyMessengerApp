@@ -17,7 +17,6 @@ struct MyMessengerApp: App {
         WindowGroup {
             AuthenticatedView(authViewModel: .init(container: container))
                 .environmentObject(container)
-                
         }
     }
 }

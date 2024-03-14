@@ -12,56 +12,88 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
-                ProfileView(viewModel: viewModel)
-                    .padding(.top, 24)
-                    .padding(.bottom, 30)
-                
-                SearBtnView()
-                    .padding(.bottom, 23)
-                
-                HStack {
-                    Text("친구")
-                        .font(.system(size: 14, weight: .bold))
-                        .foregroundColor(.bkText)
-                    
-                    Spacer()
+            contentView
+                .fullScreenCover(item: $viewModel.modalDestination) {
+                    switch $0 {
+                    case .myProfile:
+                        MyProfileView()
+                    case let .otherProfile(userId):
+                        OtherProfileView()
+                    }
                 }
-                .padding(.horizontal, 30)
+        }
+    }
+    
+    @ViewBuilder
+    var contentView: some View {
+        switch viewModel.phase {
+        case .notRequested:
+            PlaceholderView()
+                .onAppear { 
+                    viewModel.send(action: .load)
+                }
+        case .loading:
+            LoadingView()
+        case .success:
+            loadedView
+                .toolbar {
+                    Image("bookmark")
+                    Image("notifications")
+                    Image("person_add")
+                    Button(action: {
+                        
+                    }, label: {
+                        Image("settings")
+                    })
+                } 
+        case .fail:
+            ErrorView()
+        }
+    }
+    
+    var loadedView: some View {
+        ScrollView {
+            ProfileView(viewModel: viewModel)
+                .padding(.top, 24)
+                .padding(.bottom, 30)
+            
+            SearBtnView()
+                .padding(.bottom, 23)
+            
+            HStack {
+                Text("친구")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(.bkText)
                 
-                if viewModel.users.isEmpty {
-                    Spacer(minLength: 89)
-                    BeginningView()
-                } else {
+                Spacer()
+            }
+            .padding(.horizontal, 30)
+            
+            if viewModel.users.isEmpty {
+                Spacer(minLength: 89)
+                BeginningView()
+            } else {
+                LazyVStack {
                     ForEach(viewModel.users, id: \.id) { user in
-                        HStack(spacing: 8) {
-                            Image("person")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .clipShape(Circle())
-                            
-                            Text(user.name)
-                                .font(.system(size: 12))
-                                .foregroundColor(.bkText)
-                            Spacer()
-                        }
-                        .padding(.horizontal, 30)
+                        Button(action: {
+                            viewModel.send(action: .presentOtherProfileView(user.id))
+                        }, label: {
+                            HStack(spacing: 8) {
+                                Image("person")
+                                    .resizable()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
+                                
+                                Text(user.name)
+                                    .font(.system(size: 12))
+                                    .foregroundColor(.bkText)
+                                Spacer()
+                            }
+                            .padding(.horizontal, 30)
+                        })
                     }
                 }
             }
-            .toolbar {
-                Image("bookmark")
-                Image("notifications")
-                Image("person_add")
-                Button(action: {
-                    
-                }, label: {
-                    Image("settings")
-                })
-            }
-        }
-        .onAppear {
-            viewModel.send(action: .getUser)
         }
     }
 }
@@ -93,6 +125,9 @@ fileprivate struct ProfileView: View {
                 .clipShape(Circle())
         }
         .padding(.horizontal, 30)
+        .onTapGesture {
+            viewModel.send(action: .presentMyProfileView)
+        }
     }
 }
 

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1079948559721-n4i68ddevggdacdfo3ruaml012ota2le.apps.googleusercontent.com</string>
+	<string>1079948559721-h8jqi1ohf3ej0e1ar3qdcus3rct9qk0u.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1079948559721-n4i68ddevggdacdfo3ruaml012ota2le</string>
+	<string>com.googleusercontent.apps.1079948559721-h8jqi1ohf3ej0e1ar3qdcus3rct9qk0u</string>
 	<key>API_KEY</key>
 	<string>AIzaSyB-WKuVXadG89_UREaDwlFwcErjKnodtPE</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>anyong.MyMessenger</string>
+	<string>com.anyong.MyMessenger</string>
 	<key>PROJECT_ID</key>
 	<string>mymessengerapp-d32cc</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1079948559721:ios:691934aa404014dfcf29f8</string>
+	<string>1:1079948559721:ios:ea7c4b8b14cca2b9cf29f8</string>
+	<key>DATABASE_URL</key>
+	<string>https://mymessengerapp-d32cc-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

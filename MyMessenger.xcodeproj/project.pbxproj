@@ -11,6 +11,13 @@
 		AD1F9DD12BA18EBE005DD9D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DD02BA18EBE005DD9D6 /* HomeView.swift */; };
 		AD1F9DD32BA18ECB005DD9D6 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DD22BA18ECB005DD9D6 /* ChatListView.swift */; };
 		AD1F9DD52BA193AE005DD9D6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DD42BA193AE005DD9D6 /* HomeViewModel.swift */; };
+		AD5C42842BA2EA3A0049DF58 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C42832BA2EA3A0049DF58 /* Phase.swift */; };
+		AD5C42872BA2F3790049DF58 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C42862BA2F3790049DF58 /* PlaceholderView.swift */; };
+		AD5C42892BA2F3C50049DF58 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C42882BA2F3C50049DF58 /* LoadingView.swift */; };
+		AD5C428B2BA2F4E70049DF58 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C428A2BA2F4E70049DF58 /* ErrorView.swift */; };
+		AD5C428D2BA2F9BC0049DF58 /* HomeModalDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C428C2BA2F9BC0049DF58 /* HomeModalDestination.swift */; };
+		AD5C42902BA2FB2C0049DF58 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C428F2BA2FB2C0049DF58 /* MyProfileView.swift */; };
+		AD5C42922BA2FB3D0049DF58 /* OtherProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C42912BA2FB3D0049DF58 /* OtherProfileView.swift */; };
 		AD742B9C2B9ED5A400436CCE /* MyMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD742B9B2B9ED5A400436CCE /* MyMessengerApp.swift */; };
 		AD742B9E2B9ED5A400436CCE /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD742B9D2B9ED5A400436CCE /* AuthenticatedView.swift */; };
 		AD742BA02B9ED5A500436CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD742B9F2B9ED5A500436CCE /* Assets.xcassets */; };
@@ -23,7 +30,6 @@
 		AD742BCD2B9ED9B800436CCE /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD742BCC2B9ED9B800436CCE /* DIContainer.swift */; };
 		AD742BD22B9EDE1E00436CCE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD742BD12B9EDE1E00436CCE /* FirebaseAuth */; };
 		AD742BD42B9EDE8B00436CCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD742BD32B9EDE8B00436CCE /* AppDelegate.swift */; };
-		AD742BD62B9EE09700436CCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD742BD52B9EE09700436CCE /* GoogleService-Info.plist */; };
 		AD742BD92B9EE47000436CCE /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD742BD82B9EE47000436CCE /* Services.swift */; };
 		AD742BDB2B9EE4DF00436CCE /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD742BDA2B9EE4DF00436CCE /* AuthenticationService.swift */; };
 		AD742BDD2B9EECB000436CCE /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD742BDC2B9EECB000436CCE /* AuthenticationViewModel.swift */; };
@@ -42,6 +48,7 @@
 		ADBDF05C2BA1C40E0008A6F6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDF05B2BA1C40E0008A6F6 /* Constant.swift */; };
 		ADDCCFF32BA27D2600C96508 /* RandomNonceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCCFF12BA27D2600C96508 /* RandomNonceString.swift */; };
 		ADDCCFF42BA27D2600C96508 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCCFF22BA27D2600C96508 /* SHA256.swift */; };
+		ADDCCFF82BA28EF300C96508 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDCCFF72BA28EF300C96508 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +73,13 @@
 		AD1F9DD02BA18EBE005DD9D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AD1F9DD22BA18ECB005DD9D6 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
 		AD1F9DD42BA193AE005DD9D6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AD5C42832BA2EA3A0049DF58 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		AD5C42862BA2F3790049DF58 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		AD5C42882BA2F3C50049DF58 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AD5C428A2BA2F4E70049DF58 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		AD5C428C2BA2F9BC0049DF58 /* HomeModalDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModalDestination.swift; sourceTree = "<group>"; };
+		AD5C428F2BA2FB2C0049DF58 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		AD5C42912BA2FB3D0049DF58 /* OtherProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileView.swift; sourceTree = "<group>"; };
 		AD742B982B9ED5A400436CCE /* MyMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD742B9B2B9ED5A400436CCE /* MyMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessengerApp.swift; sourceTree = "<group>"; };
 		AD742B9D2B9ED5A400436CCE /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
@@ -81,7 +95,6 @@
 		AD742BC92B9ED6C400436CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD742BCC2B9ED9B800436CCE /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		AD742BD32B9EDE8B00436CCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD742BD52B9EE09700436CCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD742BD82B9EE47000436CCE /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		AD742BDA2B9EE4DF00436CCE /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		AD742BDC2B9EECB000436CCE /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
@@ -99,6 +112,7 @@
 		ADDCCFEF2BA2793800C96508 /* MyMessenger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyMessenger.entitlements; sourceTree = "<group>"; };
 		ADDCCFF12BA27D2600C96508 /* RandomNonceString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNonceString.swift; sourceTree = "<group>"; };
 		ADDCCFF22BA27D2600C96508 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		ADDCCFF72BA28EF300C96508 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +156,28 @@
 			children = (
 				AD1F9DD02BA18EBE005DD9D6 /* HomeView.swift */,
 				AD1F9DD42BA193AE005DD9D6 /* HomeViewModel.swift */,
+				AD5C428C2BA2F9BC0049DF58 /* HomeModalDestination.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		AD5C42852BA2F35C0049DF58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C42862BA2F3790049DF58 /* PlaceholderView.swift */,
+				AD5C42882BA2F3C50049DF58 /* LoadingView.swift */,
+				AD5C428A2BA2F4E70049DF58 /* ErrorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD5C428E2BA2FB050049DF58 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C428F2BA2FB2C0049DF58 /* MyProfileView.swift */,
+				AD5C42912BA2FB3D0049DF58 /* OtherProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		AD742B8F2B9ED5A400436CCE = {
@@ -171,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				ADDCCFEF2BA2793800C96508 /* MyMessenger.entitlements */,
-				AD742BD52B9EE09700436CCE /* GoogleService-Info.plist */,
+				ADDCCFF72BA28EF300C96508 /* GoogleService-Info.plist */,
 				AD742B9B2B9ED5A400436CCE /* MyMessengerApp.swift */,
 				AD742BD32B9EDE8B00436CCE /* AppDelegate.swift */,
 				AD742BDE2B9EEDA300436CCE /* View */,
@@ -225,8 +259,10 @@
 		AD742BCB2B9ED99D00436CCE /* General */ = {
 			isa = PBXGroup;
 			children = (
+				AD5C42852BA2F35C0049DF58 /* View */,
 				AD742BCC2B9ED9B800436CCE /* DIContainer.swift */,
 				ADBDF05B2BA1C40E0008A6F6 /* Constant.swift */,
+				AD5C42832BA2EA3A0049DF58 /* Phase.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -245,6 +281,7 @@
 		AD742BDE2B9EEDA300436CCE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD5C428E2BA2FB050049DF58 /* Profile */,
 				AD1F9DCF2BA18E9C005DD9D6 /* Home */,
 				AD1F9DCE2BA18E91005DD9D6 /* ChatList */,
 				AD742BE12B9EEDCD00436CCE /* MainTab */,
@@ -439,9 +476,9 @@
 			files = (
 				AD742BC62B9ED61F00436CCE /* Colors.xcassets in Resources */,
 				AD742BC82B9ED63B00436CCE /* LaunchScreen.storyboard in Resources */,
-				AD742BD62B9EE09700436CCE /* GoogleService-Info.plist in Resources */,
 				AD742BA32B9ED5A500436CCE /* Preview Assets.xcassets in Resources */,
 				AD742BA02B9ED5A500436CCE /* Assets.xcassets in Resources */,
+				ADDCCFF82BA28EF300C96508 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5C42872BA2F3790049DF58 /* PlaceholderView.swift in Sources */,
 				ADDCCFF32BA27D2600C96508 /* RandomNonceString.swift in Sources */,
 				ADBDF0532BA1BB270008A6F6 /* UserDBRepository.swift in Sources */,
 				AD1F9DD52BA193AE005DD9D6 /* HomeViewModel.swift in Sources */,
@@ -473,11 +511,16 @@
 				AD742BD92B9EE47000436CCE /* Services.swift in Sources */,
 				AD742BD42B9EDE8B00436CCE /* AppDelegate.swift in Sources */,
 				AD1F9DD12BA18EBE005DD9D6 /* HomeView.swift in Sources */,
+				AD5C42892BA2F3C50049DF58 /* LoadingView.swift in Sources */,
 				ADBDF05A2BA1C09C0008A6F6 /* DBError.swift in Sources */,
+				AD5C42902BA2FB2C0049DF58 /* MyProfileView.swift in Sources */,
 				ADDCCFF42BA27D2600C96508 /* SHA256.swift in Sources */,
+				AD5C428B2BA2F4E70049DF58 /* ErrorView.swift in Sources */,
 				AD1F9DD32BA18ECB005DD9D6 /* ChatListView.swift in Sources */,
 				AD742BDD2B9EECB000436CCE /* AuthenticationViewModel.swift in Sources */,
 				AD742BE32B9EEE1A00436CCE /* MainTabView.swift in Sources */,
+				AD5C42842BA2EA3A0049DF58 /* Phase.swift in Sources */,
+				AD5C42922BA2FB3D0049DF58 /* OtherProfileView.swift in Sources */,
 				AD742B9E2B9ED5A400436CCE /* AuthenticatedView.swift in Sources */,
 				AD1F9DCD2BA18C94005DD9D6 /* MainTabType.swift in Sources */,
 				AD742BDB2B9EE4DF00436CCE /* AuthenticationService.swift in Sources */,
@@ -486,6 +529,7 @@
 				ADBDF0552BA1BB5C0008A6F6 /* UserService.swift in Sources */,
 				AD94690B2BA0706400E5BF5A /* ServiceError.swift in Sources */,
 				AD9469092BA06F0D00E5BF5A /* User.swift in Sources */,
+				AD5C428D2BA2F9BC0049DF58 /* HomeModalDestination.swift in Sources */,
 				AD742BE92B9EF20D00436CCE /* LoginBtnStyle.swift in Sources */,
 				ADBDF05C2BA1C40E0008A6F6 /* Constant.swift in Sources */,
 				AD742BE72B9EF17A00436CCE /* LoginView.swift in Sources */,
