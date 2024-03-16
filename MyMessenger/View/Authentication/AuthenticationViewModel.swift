@@ -71,12 +71,20 @@ final class AuthenticationViewModel: ObservableObject {
                 
                 container.services.authService.handleSignInWithAppleCompletion(authorizatioin,
                                                                                none: nonce)
-                .sink { completion in
-                    // TODO:
+                .flatMap { user in
+                    self.container.services.userService.addUser(user)
+                }
+                .sink { [weak self] completion in
+                    if case .failure = completion {
+                        self?.isLoading = false
+                    }
                 } receiveValue: { [weak self] user in
+                    self?.isLoading = false
                     self?.userID = user.id
+                    self?.authenticationState = .authenticated
                 }.store(in: &subscription)
             } else if case let .failure(error) = result {
+                isLoading = false
                 print(error.localizedDescription)
             }
             

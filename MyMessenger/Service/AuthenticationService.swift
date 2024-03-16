@@ -125,7 +125,7 @@ extension AuthenticationService {
             completion(.failure(AuthenticationError.tokenError))
             return
         }
-        
+          
         guard let idTokenString = String(data: appleIDToken, encoding: .utf8) else {
             completion(.failure(AuthenticationError.tokenError))
             return
