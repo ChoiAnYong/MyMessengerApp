@@ -14,6 +14,8 @@
 		AD5A77652BA6C644000E6C8A /* MyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A77642BA6C644000E6C8A /* MyProfileViewModel.swift */; };
 		AD5A77672BA6E19A000E6C8A /* MyProfileMenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A77662BA6E19A000E6C8A /* MyProfileMenuType.swift */; };
 		AD5A77692BA7217E000E6C8A /* MyProfileDescEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A77682BA7217E000E6C8A /* MyProfileDescEditView.swift */; };
+		AD5A776B2BA739D8000E6C8A /* PhotoPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A776A2BA739D8000E6C8A /* PhotoPickerService.swift */; };
+		AD5A776E2BA73C87000E6C8A /* PhotoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A776D2BA73C87000E6C8A /* PhotoImage.swift */; };
 		AD5C42842BA2EA3A0049DF58 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C42832BA2EA3A0049DF58 /* Phase.swift */; };
 		AD5C42872BA2F3790049DF58 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C42862BA2F3790049DF58 /* PlaceholderView.swift */; };
 		AD5C42892BA2F3C50049DF58 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C42882BA2F3C50049DF58 /* LoadingView.swift */; };
@@ -80,6 +82,8 @@
 		AD5A77642BA6C644000E6C8A /* MyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewModel.swift; sourceTree = "<group>"; };
 		AD5A77662BA6E19A000E6C8A /* MyProfileMenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileMenuType.swift; sourceTree = "<group>"; };
 		AD5A77682BA7217E000E6C8A /* MyProfileDescEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileDescEditView.swift; sourceTree = "<group>"; };
+		AD5A776A2BA739D8000E6C8A /* PhotoPickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerService.swift; sourceTree = "<group>"; };
+		AD5A776D2BA73C87000E6C8A /* PhotoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImage.swift; sourceTree = "<group>"; };
 		AD5C42832BA2EA3A0049DF58 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		AD5C42862BA2F3790049DF58 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		AD5C42882BA2F3C50049DF58 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -167,6 +171,15 @@
 				AD5C428C2BA2F9BC0049DF58 /* HomeModalDestination.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		AD5A776C2BA73C6A000E6C8A /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A776A2BA739D8000E6C8A /* PhotoPickerService.swift */,
+				AD5A776D2BA73C87000E6C8A /* PhotoImage.swift */,
+			);
+			path = PhotoPicker;
 			sourceTree = "<group>";
 		};
 		AD5C42852BA2F35C0049DF58 /* View */ = {
@@ -281,6 +294,7 @@
 		AD742BD72B9EE45300436CCE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				AD5A776C2BA73C6A000E6C8A /* PhotoPicker */,
 				AD742BD82B9EE47000436CCE /* Services.swift */,
 				AD742BDA2B9EE4DF00436CCE /* AuthenticationService.swift */,
 				AD94690A2BA0706400E5BF5A /* ServiceError.swift */,
@@ -529,6 +543,7 @@
 				ADBDF05A2BA1C09C0008A6F6 /* DBError.swift in Sources */,
 				AD5C42902BA2FB2C0049DF58 /* MyProfileView.swift in Sources */,
 				ADDCCFF42BA27D2600C96508 /* SHA256.swift in Sources */,
+				AD5A776E2BA73C87000E6C8A /* PhotoImage.swift in Sources */,
 				AD5C42942BA3040F0049DF58 /* ContactService.swift in Sources */,
 				AD5C428B2BA2F4E70049DF58 /* ErrorView.swift in Sources */,
 				AD1F9DD32BA18ECB005DD9D6 /* ChatListView.swift in Sources */,
@@ -543,6 +558,7 @@
 				ADBDF0582BA1C0610008A6F6 /* UserObject.swift in Sources */,
 				ADBDF0552BA1BB5C0008A6F6 /* UserService.swift in Sources */,
 				AD94690B2BA0706400E5BF5A /* ServiceError.swift in Sources */,
+				AD5A776B2BA739D8000E6C8A /* PhotoPickerService.swift in Sources */,
 				AD9469092BA06F0D00E5BF5A /* User.swift in Sources */,
 				AD5C428D2BA2F9BC0049DF58 /* HomeModalDestination.swift in Sources */,
 				AD742BE92B9EF20D00436CCE /* LoginBtnStyle.swift in Sources */,
