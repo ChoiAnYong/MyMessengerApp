@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1E10E12BA82236002D85BF /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E10E02BA82236002D85BF /* ImageCacheService.swift */; };
+		AD1E10E42BA822F7002D85BF /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E10E32BA822F7002D85BF /* MemoryStorage.swift */; };
+		AD1E10E62BA824A3002D85BF /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E10E52BA824A3002D85BF /* DiskStorage.swift */; };
+		AD1E10E82BA8366D002D85BF /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E10E72BA8366D002D85BF /* URLImageView.swift */; };
+		AD1E10EB2BA8369B002D85BF /* URLImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E10EA2BA8369B002D85BF /* URLImageViewModel.swift */; };
 		AD1F9DCD2BA18C94005DD9D6 /* MainTabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DCC2BA18C94005DD9D6 /* MainTabType.swift */; };
 		AD1F9DD12BA18EBE005DD9D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DD02BA18EBE005DD9D6 /* HomeView.swift */; };
 		AD1F9DD32BA18ECB005DD9D6 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F9DD22BA18ECB005DD9D6 /* ChatListView.swift */; };
@@ -80,6 +85,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD1E10E02BA82236002D85BF /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
+		AD1E10E32BA822F7002D85BF /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		AD1E10E52BA824A3002D85BF /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
+		AD1E10E72BA8366D002D85BF /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
+		AD1E10EA2BA8369B002D85BF /* URLImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageViewModel.swift; sourceTree = "<group>"; };
 		AD1F9DCC2BA18C94005DD9D6 /* MainTabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabType.swift; sourceTree = "<group>"; };
 		AD1F9DD02BA18EBE005DD9D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AD1F9DD22BA18ECB005DD9D6 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
@@ -165,6 +175,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD1E10E22BA822D2002D85BF /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				AD1E10E02BA82236002D85BF /* ImageCacheService.swift */,
+				AD1E10E32BA822F7002D85BF /* MemoryStorage.swift */,
+				AD1E10E52BA824A3002D85BF /* DiskStorage.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		AD1E10E92BA83686002D85BF /* URLImage */ = {
+			isa = PBXGroup;
+			children = (
+				AD1E10E72BA8366D002D85BF /* URLImageView.swift */,
+				AD1E10EA2BA8369B002D85BF /* URLImageViewModel.swift */,
+			);
+			path = URLImage;
+			sourceTree = "<group>";
+		};
 		AD1F9DCE2BA18E91005DD9D6 /* ChatList */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +249,7 @@
 		AD5C42852BA2F35C0049DF58 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD1E10E92BA83686002D85BF /* URLImage */,
 				AD5C42862BA2F3790049DF58 /* PlaceholderView.swift */,
 				AD5C42882BA2F3C50049DF58 /* LoadingView.swift */,
 				AD5C428A2BA2F4E70049DF58 /* ErrorView.swift */,
@@ -330,6 +360,7 @@
 		AD742BD72B9EE45300436CCE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				AD1E10E22BA822D2002D85BF /* ImageCache */,
 				AD5A77792BA74A92000E6C8A /* Upload */,
 				AD5A776C2BA73C6A000E6C8A /* PhotoPicker */,
 				AD742BD82B9EE47000436CCE /* Services.swift */,
@@ -579,8 +610,11 @@
 				AD5A77692BA7217E000E6C8A /* MyProfileDescEditView.swift in Sources */,
 				AD1F9DD12BA18EBE005DD9D6 /* HomeView.swift in Sources */,
 				AD5C42892BA2F3C50049DF58 /* LoadingView.swift in Sources */,
+				AD1E10E12BA82236002D85BF /* ImageCacheService.swift in Sources */,
 				ADBDF05A2BA1C09C0008A6F6 /* DBError.swift in Sources */,
+				AD1E10EB2BA8369B002D85BF /* URLImageViewModel.swift in Sources */,
 				AD5C42902BA2FB2C0049DF58 /* MyProfileView.swift in Sources */,
+				AD1E10E62BA824A3002D85BF /* DiskStorage.swift in Sources */,
 				ADDCCFF42BA27D2600C96508 /* SHA256.swift in Sources */,
 				AD5A776E2BA73C87000E6C8A /* PhotoImage.swift in Sources */,
 				AD5C42942BA3040F0049DF58 /* ContactService.swift in Sources */,
@@ -592,6 +626,7 @@
 				AD5A77762BA7487F000E6C8A /* UploadProvider.swift in Sources */,
 				AD5C42922BA2FB3D0049DF58 /* OtherProfileView.swift in Sources */,
 				AD5A77782BA749E2000E6C8A /* UploadService.swift in Sources */,
+				AD1E10E82BA8366D002D85BF /* URLImageView.swift in Sources */,
 				AD742B9E2B9ED5A400436CCE /* AuthenticatedView.swift in Sources */,
 				AD1F9DCD2BA18C94005DD9D6 /* MainTabType.swift in Sources */,
 				AD742BDB2B9EE4DF00436CCE /* AuthenticationService.swift in Sources */,
@@ -603,6 +638,7 @@
 				AD9469092BA06F0D00E5BF5A /* User.swift in Sources */,
 				AD5A777B2BA74AB4000E6C8A /* UploadSourceType.swift in Sources */,
 				AD5C428D2BA2F9BC0049DF58 /* HomeModalDestination.swift in Sources */,
+				AD1E10E42BA822F7002D85BF /* MemoryStorage.swift in Sources */,
 				AD742BE92B9EF20D00436CCE /* LoginBtnStyle.swift in Sources */,
 				AD5A77672BA6E19A000E6C8A /* MyProfileMenuType.swift in Sources */,
 				ADBDF05C2BA1C40E0008A6F6 /* Constant.swift in Sources */,
